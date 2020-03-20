@@ -49,6 +49,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# IDE files
+.idea/
+
 # webpack
 node_modules/
 yarn-error.log

@@ -7,16 +7,20 @@
   "author": "Nitin Gupta <niingupta910@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js"
   },
   "dependencies": {
-    "bootstrap": "3.3.7"
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bootstrap": "3.3.7",
+    "jquery": "1.12.4"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "autoprefixer": "^9.7.4",
     "babel-loader": "^8.0.6",
+    "cross-env": "^7.0.2",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
