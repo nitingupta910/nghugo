@@ -61,8 +61,6 @@
 </footer>
 
 {{- if .Site.Params.selfHosted -}}
-<script src="{{ "js/katex.min.js" | absURL }}"></script>
-<script src="{{ "js/auto-render.min.js" | absURL }}"></script>
 <script src="{{ "dist/bundle.js" | absURL }}"></script>
 {{- else -}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
@@ -79,12 +77,6 @@
 <script> hljs.initHighlightingOnLoad(); </script>
 <script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
 {{- end -}}
-<script>
-  renderMathInElement(document.body, {delimiters: [
-      { left: "$$", right: "$$", display: true },
-      { left: "$", right: "$", display: false }
-  ]});
-</script>
 
 <!-- Google Custom Search Engine -->
 {{ if .Site.Params.gcse }}
