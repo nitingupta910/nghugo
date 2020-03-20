@@ -7,13 +7,14 @@
   "author": "Nitin Gupta <niingupta910@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node-sass --include-path node_modules src/css/ng-main.scss static/css/ng-main.css",
-    "watch": "node-sass --watch --include-path node_modules ng-main.scss static/css/ng-main.css"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "bootstrap": "3.3.7"
   },
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   }
 }
