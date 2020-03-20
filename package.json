@@ -1,0 +1,19 @@
+{
+  "name": "nghugo",
+  "version": "1.0.0",
+  "description": "Nitin Gupta's Hugo Theme",
+  "main": "index.js",
+  "repository": "https://github.com/nitingupta910/nghugo.git",
+  "author": "Nitin Gupta <niingupta910@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass --include-path node_modules src/css/ng-main.scss static/css/ng-main.css",
+    "watch": "node-sass --watch --include-path node_modules ng-main.scss static/css/ng-main.css"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
