@@ -18,6 +18,12 @@ module.exports = {
     publicPath: '/dist/'
   },
 
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
+  ],
+
   module: {
     rules: [
       {
@@ -92,13 +98,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-
-    new MiniCssExtractPlugin({
-      filename: "bundle.css"
-    })
-
-  ],
   // Default mode for Webpack is production.
   // Depending on mode Webpack will apply different things
   // on final bundle. For now we don't need production's JavaScript 

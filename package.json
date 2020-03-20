@@ -4,15 +4,16 @@
   "description": "Nitin Gupta's Hugo Theme",
   "main": "index.js",
   "repository": "https://github.com/nitingupta910/nghugo.git",
-  "author": "Nitin Gupta <niingupta910@gmail.com>",
+  "author": "Nitin Gupta <nitingupta910@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@fortawesome/fontawesome-free": "5.5.0",
     "bootstrap": "3.3.7",
+    "highlight": "^0.2.4",
     "jquery": "1.12.4",
     "katex": "^0.11.1"
   },

@@ -4,8 +4,9 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
+import('./main');
+
 import('bootstrap');
-import '@fortawesome/fontawesome-free/js/all'
 
 import katex from 'katex';
 import renderMathInElement from 'katex/dist/contrib/auto-render';
@@ -16,8 +17,3 @@ renderMathInElement(document.body, {
         {left: "$", right: "$", display: false}
     ]
 });
-
-window.addEventListener('DOMContentLoaded', (event) => {
-});
-
-import('./main');
